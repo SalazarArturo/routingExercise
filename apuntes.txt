@@ -1,0 +1,13 @@
+una ruta es una regla que le dice a angular que componente mostrar basandonos en una url interna de la app
+en angular el archivo en donde definimos las rutas en el app.routes.ts
+
+una vez seteadas las rutas entonces como las colocamos ? para eso usamos el routerOutlet que viene del mismo paquete router del framework 
+y es el que usaremos en los templates para llamar a nuestros componentes routeados
+
+este outlet funciona como un "espacio reservado" nos dice donde debe aparecer el componente de la ruta actual y puede haber mas de uno 
+y asi empezar a pensar en rutas hijas donde otro componente tambien puede tener su propio outlet y tener componentes debajo de el
+
+okey como ya tenemos las rutas reconocidas en el outlet ahora necesitamos la manera de navegar como tal y cambiar la url del navegador
+para ello entra el otro elemento router-link
+
+este tipo de relacion por navegacion no vuelve necesariamente padre e hijo a los componentes, seria mas como "conocidos ..."

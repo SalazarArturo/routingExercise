@@ -1,0 +1,10 @@
+@defer(when product){
+     <div class="taskCard">
+        {{product!.titulo}}
+        {{product!.descripcion}}
+        {{product!.completada}}
+        <button (click)="sendTaskId(product?.id!)">ver detalle</button>
+    </div>
+}@placeholder {
+    <p>esperando contenido</p>
+}

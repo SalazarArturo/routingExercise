@@ -1,0 +1,14 @@
+<h1>All Tasks</h1>
+
+@if (tasks) {
+    @for (task of tasks; track task.id) {
+        <ul>
+            <li>
+                 <app-dumb-component [product]="task" (taskId)="catchTaskId($event)"></app-dumb-component> <!--esto deberia ser clickeable y al dar click deberiamos navegar a la pag de detalles con el id trackeado-->
+
+            </li>
+        </ul>
+    }   
+}@else {
+    <p>error al renderizar tasks</p>
+}
